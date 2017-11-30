@@ -7,11 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Fraction.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        //NSLog(@"Hello, World!");
+        Fraction *myFraction =[[Fraction alloc] init];
+        
+        
+        //Set Fractio to 1/3
+        [myFraction setNumerator:1];
+        [myFraction setDenominator:3 ];
+        
+        
+        //Display the fraction
+        NSLog(@"The value of myFraction is:");
+        [myFraction print];
+        
+        
+        
     }
+    
+    
+    
     return 0;
 }
